@@ -1,6 +1,8 @@
-import { Link, Outlet } from 'react-router-dom';
 import { useEffect } from 'react';
+import { Outlet } from 'react-router-dom';
 import { useApp } from '../providers/AppContext';
+import AppFooter from '../components/atomic/organisms/AppFooter';
+import AppHeader from '../components/atomic/organisms/AppHeader';
 
 export default function MainLayout() {
   const { theme, setTheme, setLayout } = useApp();
@@ -10,21 +12,17 @@ export default function MainLayout() {
   }, [setLayout]);
 
   return (
-    <div>
-      <header style={{ display: 'flex', gap: 12, padding: 12 }}>
-        <Link to="/">Home</Link>
-        <Link to="/login">Login</Link>
-        <Link to="/admin">Admin</Link>
-        <button
-          type="button"
-          onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}
-        >
-          Theme: {theme}
-        </button>
-      </header>
-      <main style={{ padding: 16 }}>
+    <div style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column' }}>
+      <AppHeader
+        theme={theme}
+        onToggleTheme={() => setTheme(theme === 'light' ? 'dark' : 'light')}
+      />
+
+      <main style={{ padding: 16, flex: 1 }}>
         <Outlet />
       </main>
+
+      <AppFooter />
     </div>
   );
 }
