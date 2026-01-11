@@ -1,6 +1,6 @@
-export default function Home() {
+export default function HomePage() {
   return (
-    <div style={{ padding: 16 }}>
+    <div>
       <h1>Home</h1>
       <p>Welcome to Portfolio Management.</p>
     </div>

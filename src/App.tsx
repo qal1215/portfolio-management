@@ -1,19 +1,16 @@
-import { Link, Route, Routes } from 'react-router-dom';
-import './App.css';
-import Home from './pages/Home';
-import Portfolio from './pages/Portfolio';
+import { RouterProvider } from 'react-router-dom';
+import { Provider } from 'react-redux';
+import { router } from './routes';
+import { AppProvider } from './providers/AppProvider';
+import { store } from './store';
+
 function App() {
   return (
-    <div>
-      <nav style={{ display: 'flex', gap: 12, padding: 12 }}>
-        <Link to="/">Home</Link>
-        <Link to="/portfolio">Portfolio</Link>
-      </nav>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/portfolio" element={<Portfolio />} />
-      </Routes>
-    </div>
+    <Provider store={store}>
+      <AppProvider>
+        <RouterProvider router={router} />
+      </AppProvider>
+    </Provider>
   );
 }
 
