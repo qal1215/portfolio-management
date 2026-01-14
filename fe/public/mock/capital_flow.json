@@ -1,0 +1,37 @@
+[
+  {
+    "id": "cf_2025_09_15",
+    "type": "DEPOSIT",
+    "amount": 12000000,
+    "date": "2025-09-15",
+    "source": "Bank transfer"
+  },
+  {
+    "id": "cf_2025_10_07",
+    "type": "DEPOSIT",
+    "amount": 7000000,
+    "date": "2025-10-07",
+    "source": "Bank transfer"
+  },
+  {
+    "id": "cf_2025_10_24",
+    "type": "DIVIDEND",
+    "amount": 3500000,
+    "date": "2025-10-24",
+    "source": "VNM cash dividend"
+  },
+  {
+    "id": "cf_2025_09_30",
+    "type": "PROFIT",
+    "amount": 1650000,
+    "date": "2025-09-30",
+    "source": "CFPT2502 sell"
+  },
+  {
+    "id": "cf_2025_11_05",
+    "type": "REINVEST",
+    "amount": 2000000,
+    "date": "2025-11-05",
+    "source": "Profit reinvest"
+  }
+]

@@ -1,7 +1,8 @@
 @import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Source+Sans+3:wght@400;500;600&display=swap');
 
 :root {
-  font-family: system-ui, sans-serif;
+  font-family: 'Source Sans 3', 'Space Grotesk', sans-serif;
   --bg: #f8fafc;
   --text: #0f172a;
   --primary: #2563eb;
@@ -18,4 +19,43 @@ body {
   background: var(--bg);
   color: var(--text);
   transition: background-color 200ms ease, color 200ms ease;
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'Space Grotesk', 'Source Sans 3', sans-serif;
+}
+
+.fade-up {
+  animation: fade-up 600ms ease-out both;
+}
+
+.float-slow {
+  animation: float 12s ease-in-out infinite;
+}
+
+.float-slower {
+  animation: float 16s ease-in-out infinite;
+}
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-12px);
+  }
 }

@@ -1,0 +1,34 @@
+[
+  {
+    "id": "txn_fpt_2025_09_18",
+    "symbol": "FPT",
+    "quantity": 100,
+    "price": 120000,
+    "total": 12000000,
+    "date": "2025-09-18"
+  },
+  {
+    "id": "txn_vnm_2025_10_07",
+    "symbol": "VNM",
+    "quantity": 100,
+    "price": 70000,
+    "total": 7000000,
+    "date": "2025-10-07"
+  },
+  {
+    "id": "txn_tcb_2025_10_27",
+    "symbol": "TCB",
+    "quantity": 100,
+    "price": 20000,
+    "total": 2000000,
+    "date": "2025-10-27"
+  },
+  {
+    "id": "txn_hpg_2025_12_05",
+    "symbol": "HPG",
+    "quantity": 100,
+    "price": 51500,
+    "total": 5150000,
+    "date": "2025-12-05"
+  }
+]

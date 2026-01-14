@@ -1,0 +1,37 @@
+[
+  {
+    "date": "2025-09-01",
+    "totalValue": 12000000,
+    "assetValue": 12000000,
+    "profit": 0,
+    "reinvested": 0
+  },
+  {
+    "date": "2025-10-01",
+    "totalValue": 19500000,
+    "assetValue": 19000000,
+    "profit": 500000,
+    "reinvested": 0
+  },
+  {
+    "date": "2025-11-01",
+    "totalValue": 23300000,
+    "assetValue": 21500000,
+    "profit": 1800000,
+    "reinvested": 2000000
+  },
+  {
+    "date": "2025-12-01",
+    "totalValue": 26500000,
+    "assetValue": 24200000,
+    "profit": 2300000,
+    "reinvested": 2000000
+  },
+  {
+    "date": "2026-01-01",
+    "totalValue": 30800000,
+    "assetValue": 27700000,
+    "profit": 3100000,
+    "reinvested": 2400000
+  }
+]
